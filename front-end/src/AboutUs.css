@@ -1,0 +1,41 @@
+.AboutUs {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.AboutUs-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.AboutUs-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.AboutUs-text {
+  flex: 1 1 400px;
+}
+
+.AboutUs-text h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.AboutUs-text p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.AboutUs-loading,
+.AboutUs-error {
+  text-align: center;
+  padding: 2rem 0;
+}

@@ -78,5 +78,20 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+ // a route to serve the About Us content as JSON
+app.get('/about', (req, res) => {
+  // Replace the name and bio paragraphs below with your own text if you like.
+  res.json({
+    name: 'William Chan',
+    bio: [
+      "Hi! I'm a student working on this MERN app. I enjoy building web apps, learning new technologies, and solving problems. This project demonstrates a simple full-stack setup using MongoDB, Express, React and Node.",
+      "Outside of coding I like reading, music, and taking naps. I enjoy collaborating with others and learning from code reviews and feedback.",
+      "If you'd like to contact me, leave a message on the messages page."
+    ],
+    imageUrl: '/profile.jpeg',
+    status: 'all good',
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
